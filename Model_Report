@@ -1,0 +1,24 @@
+Overview of the Analysis: Describe the objective of this analysis.
+
+Results: Use bullet points and visual elements to address the following questions:
+
+Data Preprocessing
+
+Which variable(s) serve as the target(s) for the model? The target variable is the 'IS_SUCCESSFUL' column from the application_df dataset.
+
+Which variable(s) serve as the features for the model? The feature variables are all other columns in application_df, determined by removing the 'IS_SUCCESSFUL' column.
+
+Which variable(s) were excluded from the input data because they were neither targets nor features? The 'EIN' and 'NAME' columns were removed from the dataset as they were neither targets nor features.
+
+Compiling, Training, and Evaluating the Model
+
+What number of neurons, layers, and activation functions were chosen for the neural network model, and why? Initially, the model used 8 neurons in the first hidden layer and 5 in the second hidden layer, based on arbitrary starting values to refine later.
+
+Did the model achieve the desired performance? The model did not reach the 75% accuracy benchmark.
+
+What adjustments were made to improve model performance? Adjustments included adding more layers, eliminating additional columns, increasing the number of hidden neurons, and experimenting with different activation functions to improve accuracy.
+
+Summary: Provide an overview of the deep learning model's results. Offer a recommendation for a different approach to solving this classification problem and justify your suggestion.
+
+The deep learning model achieved approximately 73% accuracy in solving the classification problem. To improve prediction accuracy, a different model with stronger correlations between input and output variables could be used. This could involve more extensive data preprocessing and experimenting with alternative activation functions and configurations to enhance performance through iterative adjustments.
+
